@@ -17,7 +17,7 @@ Backend
 5. [Townships](#Townships)
 
 ## Users
-User Table ကို ကျွန်တော်တို့ project ကိုသုံးတဲ့သူတွေ ကျွန်တောိတို့ကိုserviceပေးတဲ့သူတွေရဲ့informationကိုသိမ်းဖို့တည်ဆောတ်ထားပါတယ်။ 
+User Table ကို ကျွန်တော်တို့ project ကိုသုံးတဲ့သူတွေ ကျွန်တော်တို့ကိုserviceပေးတဲ့သူတွေရဲ့informationကိုသိမ်းဖို့တည်ဆောတ်ထားပါတယ်။
 ```sql
 CREATE TABLE [dbo].[Users](
 	[UserId] [int] IDENTITY(1,1) NOT NULL,
