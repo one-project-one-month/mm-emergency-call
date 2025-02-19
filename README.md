@@ -11,9 +11,9 @@ Backend
 အမြန် အသုံးပြုလို့ရမယ့် Table တွေပဲ အရင် ထုတ်ထားပါတယ်။
 
 1. [Users](#users)
-2. [Emergency Services](#emergencyservices)
-3. [Emergency Requests](#emergencyrequests)
-4. [State Regions](#stateregions)
+2. [Emergency Services](#emergency services)
+3. [Emergency Requests](#emergency requests)
+4. [State Regions](#state regions)
 5. [Townships](#Townships)
 
 ## Users
