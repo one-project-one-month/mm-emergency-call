@@ -11,12 +11,12 @@ Backend
 အမြန် အသုံးပြုလို့ရမယ့် Table တွေပဲ အရင် ထုတ်ထားပါတယ်။
 
 1. [Users](#users)
-2. [EmergencyServices](#emergencyservices)
-3. [EmergencyRequests](#emergencyrequests)
-4. [StateRegions](#stateregions)
+2. [Emergency Services](#emergencyservices)
+3. [Emergency Requests](#emergencyrequests)
+4. [State Regions](#stateregions)
 5. [Townships](#Townships)
 
-## users
+## Users
 User Table ကို ကျွန်တော်တို့ project ကိုသုံးတဲ့သူတွေ ကျွန်တောိတို့ကိုserviceပေးတဲ့သူတွေရဲ့informationကိုသိမ်းဖို့တည်ဆောတ်ထားပါတယ်။ 
 ```sql
 CREATE TABLE [dbo].[Users](
@@ -35,7 +35,7 @@ CREATE TABLE [dbo].[Users](
 	[OTP] [nvarchar](50) NULL)
 ```
 
-## emergencyservices
+## Emergency Services
 Emergency Services Table ကို emergency case အမျိုးမျိုးအတွက်လိုအပ်သော emergency service များကို သိမ်းဖို့အတွတ်တည်ဆောတ်ထားပါတယ်။
 ```sql
 CREATE TABLE [dbo].[EmergencyServices](
@@ -53,7 +53,7 @@ CREATE TABLE [dbo].[EmergencyServices](
 	[ltd] [decimal](18, 7) NULL)
 ```
 
-## emergencyrequests
+## Emergency Requests
 Emergency Request Tableကို User တွေက emergency service ကိုဆက်သွယ်တဲ့ request time ရယ် respond time တွေရယ် အကြိမ်ရေတွေကိုသိမ်းဖို့တည်ဆောတ်ထားပါတယ်။
 ```sql
 CREATE TABLE [dbo].[EmergencyRequests](
@@ -68,7 +68,7 @@ CREATE TABLE [dbo].[EmergencyRequests](
 	[TownshipCode] [nvarchar](100) NULL)
 ```
 
-## stateregions
+## State Regions
 State Regions Table ကို emergency service တွေရှိတဲ့ States ကိုသိမ်းဖို့တည်ဆောတ်ထားပါတယ်။
 ```sql
 CREATE TABLE [dbo].[StateRegions](
@@ -90,8 +90,7 @@ CREATE TABLE [dbo].[Townships](
 ```
 
 ## Store Procedure for Dashboard
-
-
+```sql
 -----------------------------------
 -- Test Script
 -----------------------------------
@@ -388,6 +387,6 @@ END
 --END Of sp_Dashboard_TopTenServicePerTownship 
 ---------------------------------------------------------------------------------------------
 
-
-
 GO
+
+```
