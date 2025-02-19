@@ -35,7 +35,7 @@ CREATE TABLE [dbo].[Users](
 	[OTP] [nvarchar](50) NULL)
 ```
 
-## Emergency Services
+## [Emergency Services]
 Emergency Services Table ကို emergency case အမျိုးမျိုးအတွက်လိုအပ်သော emergency service များကို သိမ်းဖို့အတွတ်တည်ဆောတ်ထားပါတယ်။
 ```sql
 CREATE TABLE [dbo].[EmergencyServices](
@@ -53,7 +53,7 @@ CREATE TABLE [dbo].[EmergencyServices](
 	[ltd] [decimal](18, 7) NULL)
 ```
 
-## Emergency Requests
+## [Emergency Requests]
 Emergency Request Tableကို User တွေက emergency service ကိုဆက်သွယ်တဲ့ request time ရယ် respond time တွေရယ် အကြိမ်ရေတွေကိုသိမ်းဖို့တည်ဆောတ်ထားပါတယ်။
 ```sql
 CREATE TABLE [dbo].[EmergencyRequests](
@@ -151,15 +151,9 @@ BEGIN
 	DROP TABLE #RequestSummary
 END
 
-
-
-
 ---------------------------------------------------------------------------------------------
 --END Of sp_Dashboard_DailyWeeklyMonthlyPerRequest 
 ---------------------------------------------------------------------------------------------
-
-
-
 
 GO
 /****** Object:  StoredProcedure [dbo].[sp_Dashboard_Process]    Script Date: 1/26/2025 11:00:07 PM ******/
@@ -167,20 +161,6 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 -----------------------------------
 -- Test Script
